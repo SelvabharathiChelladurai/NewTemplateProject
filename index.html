@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Welcome | Home</title>
+
+  </head>
+  <body>
+    <header>
+    
+      
+      <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark ">
+       <div class="container">
+          <a class="navbar-brand" href="#">NAO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
+          <li class="nav-item"><a class="nav-link" href="#"> Memories </a></li>
+          <li class="nav-item"><a class="nav-link" href="#"> Pass </a></li>
+          <li class="nav-item"><a class="nav-link" href="#"> Publish </a></li>
+          <li class="nav-item"><a class="nav-link" href="#"> Signup </a></li>
+          <li class="nav-item"><a class="nav-link" href="#"> Login </a></li>
+        </ul>
+        </div> <!-- navbar-collapse.// -->
+       </div> <!-- container-fluid.// -->
+      </nav>
+      </header>
+      
+        <div class="container">
+          <center>
+            <div class="name_board">
+            <h1>NAMMA AREA OLYMPIC</h1>
+            <h6>'NEVER SAY NEVER'</h6>
+
+            <a class="btn btn-success" href="#" role="button">INVITATION</a>
+            </div>
+          </center>
+        </div>
+
+        <div class="container">
+            <center>
+              <div class="about">
+                <h1>ABOUT</h1>
+                <p>There are multiple ways to fix navbar or header on top of page to stay always visible. In this example we illustrate how to add fixed-top class when page scolled. To see the difference between normal and fixed top navigation menu, just scroll. Keep in mind, This will work only for desktop screens. But still you can customize our code example.
+
+                  Steps to make bootstrap nav fixed top after scroll
+                  Create navbar on top of page
+                  Now check if window scrolled window.addEventListener('scroll', function() { ... }
+                  Check if scrolled more than x amount of px if (window.scrollY > 50) { ... }
+                  Select navbar element and add function classList.add('fixed-top'); to fix on top
+                  Remove class fixed-top when page scrolled back to top
+                  Here are basic code snippets
+                  <header>
+                  <div class="bg-warning py-2"> 
+                   Some top header info 
+                  </div>
+                  
+                  <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-primary">
+                   <div class="container">
+                      <a class="navbar-brand" href="#">Brand</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item"><a class="nav-link" href="#"> Menu item </a></li>
+                      <li class="nav-item"><a class="nav-link" href="#"> Menu item </a></li>
+                      <li class="nav-item"><a class="nav-link" href="#"> Menu item </a></li>
+                    </ul>
+                    </div> <!-- navbar-collapse.// -->
+                   </div> <!-- container-fluid.// -->
+                  </nav>
+                  </header>
+                  view rawcode.html hosted with ❤ by GitHub
+                  document.addEventListener("DOMContentLoaded", function(){
+                    window.addEventListener('scroll', function() {
+                        if (window.scrollY > 50) {
+                          document.getElementById('navbar_top').classList.add('fixed-top');
+                          // add padding top to show content behind navbar
+                          navbar_height = document.querySelector('.navbar').offsetHeight;
+                          document.body.style.paddingTop = navbar_height + 'px';
+                        } else {
+                          document.getElementById('navbar_top').classList.remove('fixed-top');
+                           // remove padding top from body
+                          document.body.style.paddingTop = '0';
+                        } 
+                    });
+                  }); 
+                  // DOMContentLoaded  end
+                  view rawscript.js hosted with ❤ by GitHub
+                  
+                  Another simple solution with CSS:
+                  There is more simple way also to do that, just add class name sticky-top to your navbar. But keep in mind, your navbar element must be direct child of body. If you wrap your navbar with some other div it will not work.
+                  
+                  
+                  Creating an e-commerce project?
+                  
+                  Design system and code library
+                  for e-commerce web projects
+                  Build responsive e-commerce projects on the web with ready to use UI kit made for ecommerce projects for developers and designers. Bootstrap ecommerce is a toolkit for developing online shops and marketplaces
+                  
+                   
+                  </p>
+
+              </div>
+            </center>
+        </div>
+      
+        <div class="container">
+          <center>
+            <h1>MEMORIES</h1>
+            <div class="card-deck">   
+              <div class="card">
+                <img class="card-img-top" src="banner.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="banner.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="banner.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </center>
+        </div>
+
+        <div class="container">
+          <center>
+            <div class="pass">
+              <h1>INVITATIONS</h1>
+            </div>    
+          </center>
+        </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script>document.addEventListener("DOMContentLoaded", function(){
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          document.getElementById('navbar_top').classList.add('fixed-top');
+          // add padding top to show content behind navbar
+          navbar_height = document.querySelector('.navbar').offsetHeight;
+          document.body.style.paddingTop = navbar_height + 'px';
+        } else {
+          document.getElementById('navbar_top').classList.remove('fixed-top');
+           // remove padding top from body
+          document.body.style.paddingTop = '0';
+        } 
+    });
+  }); </script>
+  
+  
+  </body>
+</html>

@@ -1,0 +1,48 @@
+body {
+    background-image: url('banner.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+  }
+  .navbar-brand{
+    font-family: cursive;
+  }
+
+  .navbar{
+    position: fixed;
+  }
+  .name_board{
+    padding-top: 25%;
+  }
+
+  .name_board,h1, h6{
+    color: white;
+  }
+
+  .name_board h6{
+    padding-top: 2%;
+  }
+
+  .name_board h1{   
+    font-family: cursive;
+    font-weight: bold;
+  }
+
+ 
+  .about{
+    padding-top: 30%;  
+  }
+
+  .about p{
+    color: white;
+    font-family: cursive;
+  }
+  
+  .card-deck{
+    padding-top:1%;
+    
+  }
+  .pass{
+    padding-top:2%;
+  }
